@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <!-- Quantity label -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Quantity"
+        android:id="@+id/quantityLabel"
+        android:textAllCaps="true"
+        android:background="#696969"
+        android:textColor="#afafaf"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Quantity text -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:id="@+id/btnPlus"
+            android:onClick="increment"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="3"
+            android:id="@+id/quantityTxt" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:id="@+id/btnMinus"
+            android:onClick="decrement"/>
+    </LinearLayout>
+
+    <!-- Quantity label -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Price"
+        android:id="@+id/priceLabel"
+        android:textAllCaps="true"
+        android:background="#696969"
+        android:textColor="#afafaf"
+        android:layout_marginBottom="10dp"/>
+
+    <!-- Quantity text -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="1222999"
+        android:id="@+id/priceTxt" />
+
+    <!-- Order button -->
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Order"
+        android:id="@+id/btnOrder"
+        android:background="#e76538"
+        android:onClick="orderFlower"
+
+        />
+
+</LinearLayout>
